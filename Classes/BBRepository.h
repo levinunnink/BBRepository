@@ -28,7 +28,7 @@
 #ifndef LogDebug
     #if DEBUG
         #define LogDebug(fmt, ...)  NSLog((@"DEBUG | " fmt), ##__VA_ARGS__);
-    #elif
+    #else
         #define LogDebug(fmt, ...)
     #endif
 #endif

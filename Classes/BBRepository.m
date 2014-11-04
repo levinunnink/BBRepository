@@ -50,9 +50,9 @@ NSString* const kBBRepositoryDefaultIdentifier = @"Default";
         NSString* basePath = [self baseStoragePath];
         NSString* repositoryName = [self repositoryName];
         NSString* indexFilename = [NSString stringWithFormat:@"%@-Index.plist", repositoryName];
-
         _repositoryDirectory = [basePath stringByAppendingPathComponent:repositoryName];
         _repositoryIndex = [_repositoryDirectory stringByAppendingPathComponent:indexFilename];
+
     }
 
     return self;
